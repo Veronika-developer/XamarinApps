@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layouts_App.Valgusfoor">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame x:Name="FrameR"
+                   BackgroundColor="Gray" 
+                   CornerRadius="90"
+                   Margin="90,0"
+                   Padding="70">
+                <Label x:Name="RED"
+                    Text="Red"/>
+            </Frame>
+            <Frame x:Name="FrameY"
+                   BackgroundColor="Gray" 
+                   CornerRadius="90"
+                   Margin="90,0"
+                   Padding="70">
+                <Label x:Name="YELLOW"
+                    Text="Yellow"/>
+            </Frame>
+            <Frame x:Name="FrameG"
+                   BackgroundColor="Gray" 
+                   CornerRadius="90"
+                   Margin="90,0"
+                   Padding="70">
+                <Label x:Name="GREEN"
+                    Text="Green"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="on"
+                        Text="on"
+                        Clicked="on_Clicked"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="#49C532" />
+                <Button x:Name="off"
+                        Text="off"
+                        Clicked="off_Clicked"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="#9E0006" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

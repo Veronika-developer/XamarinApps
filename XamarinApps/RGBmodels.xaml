@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layouts_App.RGBmodels">
+    <ContentPage.Content>
+        <StackLayout Padding="12,12,12,12">
+            <Frame x:Name="FrameColor"
+                   BackgroundColor="White" 
+                   Margin="10"
+                   Padding="140"></Frame>
+                <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                <Slider x:Name="SliderRED" Minimum="0" Maximum="255" Value="15"
+                        ValueChanged="Slider_ValueChanged"  VerticalOptions="Center" 
+                        BackgroundColor="PaleVioletRed"/>
+                <Label x:Name="LabelRed"
+                       VerticalOptions="Center"/>
+                <Slider x:Name="SliderGREEN" Minimum="0" Maximum="255" Value="15"
+                        ValueChanged="Slider_ValueChanged"  VerticalOptions="Center" 
+                        BackgroundColor="LightGreen"/>
+                <Label x:Name="LabelGreen" 
+                       VerticalOptions="Center"/>
+                <Slider x:Name="SliderBLUE" Minimum="0" Maximum="255" Value="15"
+                        ValueChanged="Slider_ValueChanged"  VerticalOptions="Center" 
+                        BackgroundColor="LightBlue"/>
+                <Label x:Name="LabelBlue" 
+                       VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                <Button x:Name="ColorPink"
+                        HeightRequest="30"
+                        WidthRequest="30"
+                        Clicked="ColorPink_Clicked"
+                        BackgroundColor="#FFC0CB"/>
+            </StackLayout>
+            <Button x:Name="BtnRnd"
+                    Text="Random"
+                    Clicked="BtnRnd_Clicked"
+                    HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
